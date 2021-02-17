@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import top from './images/top_oil_1.png';
+import bottom from './images/bottom_oil_1.png';
+import logo from './images/logo_melisse_oil.png';
+import melisse from './images/melisse.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <img src={top} className="top" alt="top" />
+        
+        <img src={bottom} className="bottom" alt="bottom" />
+        <img src={melisse} className="melisse" alt="melisse" />
+        
+        <img src={logo} className="logo" alt="logo" />
     </div>
   );
 }
