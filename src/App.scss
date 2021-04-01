@@ -1,0 +1,154 @@
+.App {
+  width: 100vw;
+  /* height: 640px; */
+  /* width: 100%; */
+  height: 100vh;
+  background: lightyellow;
+  /* text-align: center; */
+}
+
+.root-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-width: 1366px;
+  margin: 0 auto;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  background: white;
+}
+
+/*
+ 360 : -50 : -100
+
+
+*/
+
+.top {
+  position: absolute;
+  top: -150px;
+  /* left: 0px; */
+  width: 100%;
+  max-width: 1366px;
+  // @media screen and (min-width: 1300px) {
+  //   top: -300px;
+  // }
+
+}
+
+.bottom {
+  position: absolute;
+  bottom: -300px;
+  /* left: 0px; */
+  width: 100%;
+  max-width: 1366px;
+  // @media screen and (min-width: 1300px) {
+  //   bottom: -450px;
+  // }
+}
+
+.melisse {
+  position: absolute;
+  right: 20px;
+  bottom: 170px;
+  width: 20%;
+}
+
+.logo {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  height: 100px;
+}
+
+.anim1 {
+  animation: anime1 500ms infinite;
+}
+
+.anim2 {
+  opacity: 0;
+  animation: anime2 500ms infinite;
+}
+
+.anim3 {
+  opacity: 0;
+  animation: anime3 500ms infinite;
+}
+
+.anim4 {
+  opacity: 0;
+  animation: anime4 500ms infinite;
+}
+
+@keyframes anime1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  26% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes anime2 {
+  0% {
+    opacity: 0;
+  }
+  24% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  51% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes anime3 {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  74% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+}
+
+@keyframes anime4 {
+  0% {
+    opacity: 0;
+  }
+  74% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
