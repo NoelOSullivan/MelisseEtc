@@ -56,9 +56,21 @@
 
 .logo {
   position: absolute;
-  left: 0px;
+  left: 10px;
   top: 10px;
-  height: 100px;
+  height: 300px;
+}
+
+.tasse {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.seeds {
+  position: absolute;
+  top: 300px;
+  // margin: auto;
 }
 
 .anim1 {
