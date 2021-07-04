@@ -4,6 +4,7 @@
   /* width: 100%; */
   height: 100vh;
   background: lightyellow;
+  overflow: hidden;
   /* text-align: center; */
 }
 
@@ -18,6 +19,13 @@
   background: white;
 }
 
+.background {
+  position: absolute;
+  opacity: 0.8;
+  width: 100vw;
+  height: 100vh;
+}
+
 /*
  360 : -50 : -100
 
@@ -26,10 +34,11 @@
 
 .top {
   position: absolute;
-  top: -150px;
+  // top: -150px;
   /* left: 0px; */
   width: 100%;
   max-width: 1366px;
+  filter: drop-shadow(0px 5px 0px white);
   // @media screen and (min-width: 1300px) {
   //   top: -300px;
   // }
@@ -38,10 +47,11 @@
 
 .bottom {
   position: absolute;
-  bottom: -300px;
+  bottom: 0px;
   /* left: 0px; */
   width: 100%;
   max-width: 1366px;
+  filter: drop-shadow(0px -5px 0px white);
   // @media screen and (min-width: 1300px) {
   //   bottom: -450px;
   // }
@@ -61,16 +71,92 @@
   height: 300px;
 }
 
+.panier {
+  position: absolute;
+  width: 40%;
+  top: 400px;
+}
+
 .tasse {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right:  -200px;
+}
+
+.titre-cueillette {
+  position: absolute;
+  font-size: 120px;
+  top: 520px;
+  left: 100px;
+  font-family: 'Rochester', cursive;
+  font-weight: 900;
+  color: white;
+}
+
+.ampersand {
+  position: absolute;
+  font-size: 240px;
+  top: 550px;
+  left: 100px;
+  font-family: 'Rochester', cursive;
+  color: white;
+}
+
+.titre-sechage {
+  position: absolute;
+  font-size: 120px;
+  top: 650px;
+  left: 300px;
+  font-family: 'Rochester', cursive;
+  font-weight: 900;
+  color: white;
+}
+
+.titre-pousse {
+  position: absolute;
+  font-size: 120px;
+  top: 270px;
+  right: 250px;
+  font-family: 'Rochester', cursive;
+  font-weight: 900;
+  color: white;
+}
+
+.pitch {
+  position: absolute;
+  font-size: 70px;
+  top: 1350px;
+  left: 50px;
+  width: 60%;
+  text-align: right;
+  // font-weight: 600;
+}
+
+.romarin {
+  position: absolute;
+  width: 40%;
+  top: 50px;
+  right: 0px;
+  transform: rotateZ(-20deg);
+  z-index: 1;
 }
 
 .seeds {
   position: absolute;
-  top: 300px;
+  width: 80%;
+  top: 800px;
+  right: -200px;
   // margin: auto;
+}
+
+.titre-melange {
+  position: absolute;
+  font-size: 120px;
+  top: 900px;
+  right: 100px;
+  font-family: 'Rochester', cursive;
+  font-weight: 900;
+  color: white;
 }
 
 .anim1 {
